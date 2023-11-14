@@ -1,0 +1,40 @@
+/* src/components/ImageUploader/ImageUploader.css */
+
+.image-uploader .upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #dcdcdc;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .image-uploader .upload-area:hover {
+    border-color: #a0a0a0;
+  }
+  
+  .image-uploader .upload-icon {
+    font-size: 50px; /* Large icon size */
+    margin-bottom: 10px;
+  }
+  
+  /* Hide the actual file input, but keep it accessible for screen readers */
+  .image-uploader .file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .image-uploader p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  

@@ -1,3 +1,13 @@
+I need to develop frontend in react for this design.
+
+Structure:
+1. ImageUploader: Allows users to upload an image.
+2. Text Input Component: Enables users to enter text.
+3. Image Selection Component: Allows users to select an additional image (if needed).
+4. Submit Button: To send the data to the backend.
+5. Display Component: Shows the processed image returned from the backend.
+
+
 File Structure
 public/
     index.html
@@ -11,3 +21,65 @@ src/
     App.css
     index.js
     index.css
+
+
+Write me code by files. No explanation of code, just code.
+Also write me CSS and HTML to look like in picture, if you need to generate image and tell me where to put that image
+
+import StyleSelector from './components/StyleSelector';
+import ImageUploader from './components/ImageUploader';
+import ImagePreview from './components/ImagePreview';
+import SubmitButton from './components/SubmitButton';
+
+
+
+
+
+
+Application Structure
+Application Name: Painting by Numbers
+Primary Functionality: Allows users to upload an image and apply a selected style to it.
+Component Breakdown
+StyleSelector Component
+
+Purpose: Allows users to select a style from a predefined list.
+Features:
+Dropdown or visual style selection
+Preview of styles
+Responsive design for mobile and desktop views
+Data Handling: Fetches available styles from a backend service or a static list.
+ImageUploader Component
+
+Purpose: Enables users to upload their own image.
+Features:
+Drag and drop interface
+File type and size validation
+Progress indication during upload
+User Feedback: Error messages for invalid uploads, confirmation for successful uploads.
+ImagePreview Component
+
+Purpose: Displays the uploaded image with the selected style applied.
+Features:
+Real-time preview as styles are selected
+Zoom and pan functionalities for detailed view
+Interactivity: Should update dynamically as users select different styles.
+SubmitButton Component
+
+Purpose: Submits the final image with the applied style.
+Design: Prominent and easily accessible, possibly using floating action button design for mobile.
+User Interface Design
+Theme: Minimalistic and modern
+Color Scheme: Neutral with accent colors for interactive elements
+Layout: Clean, with a focus on the main functionality (image upload and style selection)
+Responsive Design: Ensure usability across devices - mobile, tablet, and desktop.
+Accessibility: Keyboard navigable, screen-reader friendly, and adherence to WCAG guidelines.
+Frontend Implementation
+Framework: React
+State Management: Use React Context or Redux for managing application state.
+API Integration: For fetching styles and submitting the final image.
+Error Handling: Graceful handling of errors and user feedback.
+Performance Optimization: Lazy loading of components, optimized image handling.
+Additional Features (Optional)
+User Authentication: If you plan to save user preferences or their previous works.
+Gallery View: Display a gallery of previously styled images.
+Social Sharing: Option to share the styled image on social media.

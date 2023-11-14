@@ -1,0 +1,92 @@
+/* Slider container */
+.style-slider {
+    margin: 20px 0;
+  }
+  
+  /* Individual slide styling */
+  .style-slider .slick-slide {
+    padding: 0 10px; /* Spacing between slides */
+    outline: none; /* Removes the default focus outline */
+  }
+  
+  /* Image styling inside each slide */
+  .style-slider img {
+    width: 100%;
+    border-radius: 5px; /* Optional: if you want rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+    cursor: pointer;
+  }
+  
+  /* Styling for the active slide */
+  .style-slider .slick-current img {
+    transform: scale(1.05); /* Slightly scale up the active image */
+  }
+  
+  /* Slide caption */
+  .style-slider p {
+    margin-top: 8px; /* Spacing between image and caption */
+    font-size: 1rem; /* Caption font size */
+    color: #333; /* Caption text color */
+    text-align: center;
+  }
+  
+  /* Arrow button styling (if not using the default arrows) */
+  .style-slider .slick-prev,
+  .style-slider .slick-next {
+    font-size: 24px;
+    line-height: 1;
+    color: #333;
+    opacity: 0.75;
+  }
+  
+  .style-slider .slick-prev:hover,
+  .style-slider .slick-next:hover {
+    opacity: 1;
+  }
+  
+  /* Dots navigation styling */
+  .style-slider .slick-dots {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .style-slider .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .style-slider .slick-dots li button {
+    font-size: 0; /* Removes the default arrow characters */
+    line-height: 0;
+    display: block;
+    width: 10px; /* Size of the dots */
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: #ccc;
+    border-radius: 50%;
+  }
+  
+  .style-slider .slick-dots li.slick-active button {
+    background: #333;
+  }
+  
+  /* Adjust the below responsive settings as necessary */
+  @media (max-width: 768px) {
+    .style-slider .slick-slide {
+      padding: 0 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .style-slider .slick-slide {
+      padding: 0 3px;
+    }
+  }
+  
